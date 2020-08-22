@@ -99,4 +99,4 @@ Twitter-Retweet-Bot
 
 ## Additional Information
 
-- [Installing Selenium and Chromedriver on Windows]("https://medium.com/@patrick.yoho11/installing-selenium-and-chromedriver-on-windows-e02202ac2b08)
+- [Installing Selenium and Chromedriver on Windows](https://medium.com/@patrick.yoho11/installing-selenium-and-chromedriver-on-windows-e02202ac2b08)
