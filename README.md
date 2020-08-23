@@ -26,6 +26,7 @@ If you like my content or find this code useful, give it a :star: or support me 
     - [Prerequisites](#prerequisites)
 - [Instructions](#instructions)
     - [File Structure](#file-structure)
+- [Deployment](#deployment)
 - [Demo](#demo)
 - [Additional Information](#additional-information)
 
@@ -89,6 +90,32 @@ Twitter-Retweet-Bot
  |-- credentials.py
  |-- insta-bot.py
 ```
+---
+
+## Deployment
+
+1. Create a free Beginner [PythonAnywhere](https://www.pythonanywhere.com/pricing/) account.
+
+![Create Account](resources-for-readme/create-account.png)
+
+
+2. Go to Files, create a new Directory, upload the three `.py` files.
+
+![Upload Files](resources-for-readme/upload-files-insta-bot.png)
+
+
+3. Copy the file path, go to Tasks, enter the [UTC](https://www.worldtimeserver.com/current_time_in_UTC.aspx) time you want the script to run at, and enter the python version and file path with `insta-bot.py` at the end.
+
+```
+python3.8 /home/account-name/directory-name/insta-bot.py	
+```
+
+![Schedule Task](https://media.giphy.com/media/TdpUmOzASDavGF6kN4/giphy.gif)
+
+4. After the task runs as the scheduled time, you can check the task log to see the bot running
+
+![Check Logs](resources-for-readme/check-logs-insta-bot.png)
+
 ---
 
 ## Demo
