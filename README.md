@@ -112,7 +112,16 @@ python3.8 /home/account-name/directory-name/insta-bot.py
 
 ![Schedule Task](https://media.giphy.com/media/TdpUmOzASDavGF6kN4/giphy.gif)
 
-4. After the task runs as the scheduled time, you can check the task log to see the bot running
+4. Create a new bash console on your Dashboard and run pip with your python versin to install selenium
+
+![Bash Console](resources-for-readme/new-bash.png)
+
+```
+pip3.8 install --user selenium
+```
+
+
+5. After the task runs as the scheduled time, you can check the task log to see the bot running
 
 ![Check Logs](resources-for-readme/check-logs-insta-bot.png)
 
