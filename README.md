@@ -126,4 +126,4 @@ python3.8 /home/account-name/directory-name/insta-bot.py
 
 ## Additional Information
 
-- [Installing Selenium and Chromedriver on Windows]("https://medium.com/@patrick.yoho11/installing-selenium-and-chromedriver-on-windows-e02202ac2b08)
+- [Installing Selenium and Chromedriver on Windows](https://medium.com/@patrick.yoho11/installing-selenium-and-chromedriver-on-windows-e02202ac2b08)
