@@ -27,6 +27,7 @@ logging.basicConfig(format='%(levelname)s [%(asctime)s] %(message)s', datefmt='%
 logger = logging.getLogger()
 
 def initialize_browser():
+
     # Do this so we don't get DevTools and Default Adapter failure
     options = webdriver.ChromeOptions()
     options.add_experimental_option('excludeSwitches', ['enable-logging'])
