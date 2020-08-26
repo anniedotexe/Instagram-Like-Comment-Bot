@@ -44,17 +44,21 @@ def login_to_instagram(browser):
     sleep(2)
 
     # Get the login elements and type in your credentials
+    browser.implicitly_wait(30)
     username = browser.find_element_by_name('username')
     username.send_keys(USERNAME)
+    browser.implicitly_wait(30)
     password = browser.find_element_by_name('password')
     password.send_keys(PASSWORD)
 
     sleep(2)
 
     # Click the login button
+    browser.implicitly_wait(30)
     browser.find_element_by_xpath("//*[@id='loginForm']/div/div[3]/button").click()
 
     # If login information is incorrect, program will stop running
+    browser.implicitly_wait(30)
     try:
         if browser.find_element_by_xpath("//*[@id='slfErrorAlert']"):
             browser.close()
@@ -64,17 +68,17 @@ def login_to_instagram(browser):
     except:
         pass
 
-    browser.implicitly_wait(5)
-
+    browser.implicitly_wait(30)
+    
     logger.info(f'Logged in to {USERNAME}')
 
     # Save your login info? Not now
+    browser.implicitly_wait(30)
     browser.find_element_by_xpath("//*[@id='react-root']/section/main/div/div/div/div/button").click()
-    browser.implicitly_wait(5)
 
     # Turn on notifications? Not now
+    browser.implicitly_wait(30)
     browser.find_element_by_xpath("/html/body/div[4]/div/div/div/div[3]/button[2]").click()
-    browser.implicitly_wait(5)
 
 def automate_instagram(browser):
     # Keep track of how many you like and comment
@@ -85,11 +89,13 @@ def automate_instagram(browser):
     tag_index = 0
 
     for hashtag in hashtag_list:
+        browser.implicitly_wait(30)
         browser.get(f'https://www.instagram.com/explore/tags/{hashtag_list[tag_index]}/')
         logger.info(f'Exploring #{hashtag}')
         sleep(randint(1,2))
 
         # Click first thumbnail to open
+        browser.implicitly_wait(30)
         first_thumbnail = browser.find_element_by_xpath("//*[@id='react-root']/section/main/article/div[1]/div/div/div[1]/div[1]/a/div/div[2]")
         first_thumbnail.click()
 
@@ -100,10 +106,12 @@ def automate_instagram(browser):
 
             # Check if the post is already liked
             try:
+                browser.implicitly_wait(30)
                 browser.find_element_by_xpath("/html/body/div[4]/div[2]/div/article/div[3]/section[1]/span[1]/button/div/span/*[@aria-label='Unlike']")
                 logger.info("Already liked this post previously")
             except:
                 # Like
+                browser.implicitly_wait(30)
                 browser.find_element_by_xpath("/html/body/div[4]/div[2]/div/article/div[3]/section[1]/span[1]/button/div/span/*[@aria-label='Like']").click()
                 logger.info("Liked")
                 likes += 1
@@ -112,11 +120,13 @@ def automate_instagram(browser):
 
                 # Comment
                 try:
+                    browser.implicitly_wait(30)
                     browser.find_element_by_xpath("//form").click()
                     # Random chance of commenting
                     do_i_comment = randint(1,chance_to_comment)
                     if do_i_comment == 1:
-                        
+
+                            browser.implicitly_wait(30)
                             comment = browser.find_element_by_xpath("//textarea")
 
                             sleep(wait_to_comment)
@@ -125,14 +135,15 @@ def automate_instagram(browser):
                             comment.send_keys(comments_list[rand_comment_index])
                             comment.send_keys(Keys.ENTER)
                             logger.info(f"Commented '{comments_list[rand_comment_index]}'")
-                            sleep(wait_between_posts)
                             comments += 1
+                            sleep(wait_between_posts)
 
                 except Exception:
                     # Continue to next post if comments section is limited or turned off
                     continue
             
             # Go to next post
+            browser.implicitly_wait(30)
             browser.find_element_by_link_text('Next').click()
             logger.info('Getting next post')
             sleep(wait_between_posts)    
