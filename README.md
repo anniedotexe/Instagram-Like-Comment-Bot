@@ -93,6 +93,23 @@ Twitter-Retweet-Bot
 
 Annie Wu ([anniewu2303](https://github.com/anniewu2303))
 
+If you have any questions about the code, feel free to contact me.
+
+<p align="left">
+  <a href="mailto:anniewu2303@gmail.com"> 
+    <img alt="Connect via Email" src="https://img.shields.io/badge/Gmail-c14438?style=flat&logo=Gmail&logoColor=white" />
+  </a>
+  <a href="https://www.linkedin.com/in/anniewu2303/"> 
+    <img alt="Connect on LinkedIn" src="https://img.shields.io/badge/-LinkedIn-0072b1?style=flat&logo=Linkedin&logoColor=white" />
+  </a>
+  <a href="https://twitter.com/intent/follow?screen_name=anniew_twt"> 
+    <img alt="Follow on Twitter" src="https://img.shields.io/badge/-Twitter-00acee?style=flat&logo=Twitter&logoColor=white" />
+  </a>
+  <a href="https://www.instagram.com/anniewu_photo/"> 
+    <img alt="Follow on Instagram" src="https://img.shields.io/badge/-Instagram-E1306C?style=flat&logo=instagram&logoColor=white" />
+  </a>
+</p>
+
 This project was created for educational purposes and for personal and open-source use.
 
 If you like my content or find this code useful, give it a :star: or support me by buying me a coffee :coffee::grinning:
