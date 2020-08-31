@@ -93,7 +93,7 @@ Twitter-Retweet-Bot
 
 Annie Wu ([anniewu2303](https://github.com/anniewu2303))
 
-If you have any questions about the code, feel free to contact me.
+If you have any questions about the code, feel free to contact me anywhere below.
 
 <p align="left">
   <a href="mailto:anniewu2303@gmail.com"> 
