@@ -85,12 +85,9 @@ def automate_instagram(browser):
     likes = 0
     comments = 0
 
-    # Index for tags in hashtag list
-    tag_index = 0
-
     for hashtag in hashtag_list:
         browser.implicitly_wait(30)
-        browser.get(f'https://www.instagram.com/explore/tags/{hashtag_list[tag_index]}/')
+        browser.get(f'https://www.instagram.com/explore/tags/{hashtag}/')
         logger.info(f'Exploring #{hashtag}')
         sleep(randint(1,2))
 
@@ -104,12 +101,7 @@ def automate_instagram(browser):
         # Go through x number of photos per hashtag
         for post in range(1,number_of_posts):
 
-            # Check if the post is already liked
             try:
-                browser.implicitly_wait(30)
-                browser.find_element_by_xpath("/html/body/div[4]/div[2]/div/article/div[3]/section[1]/span[1]/button/div/span/*[@aria-label='Unlike']")
-                logger.info("Already liked this post previously")
-            except:
                 # Like
                 browser.implicitly_wait(30)
                 browser.find_element_by_xpath("/html/body/div[4]/div[2]/div/article/div[3]/section[1]/span[1]/button/div/span/*[@aria-label='Like']").click()
@@ -140,16 +132,18 @@ def automate_instagram(browser):
 
                 except Exception:
                     # Continue to next post if comments section is limited or turned off
-                    continue
+                    pass
+
+            except Exception:
+                # Already liked it, continue to next post
+                logger.info('Already liked this photo previously')
+                pass
             
             # Go to next post
             browser.implicitly_wait(30)
             browser.find_element_by_link_text('Next').click()
             logger.info('Getting next post')
             sleep(wait_between_posts)    
-        
-        # Go to the next index in hashtags_list
-        tag_index += 1
 
     logger.info(f'Liked {likes} posts')
     logger.info(f'Commented on {comments} posts')
