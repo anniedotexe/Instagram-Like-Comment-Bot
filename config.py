@@ -19,10 +19,10 @@ Make adjustments below to tweak the bot to your liking
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
 # List of hashtags to go through
-hashtag_list = ['theimaged', 'paperjournalmag', 'hippomag']
+hashtag_list = ['urbanandstreet', 'natureperfect']
 
 # List of comments to be randonmly chosen from
-comments_list = ['Love this! 💙', 'Nice shot :)', 'Amazing~ 💙', 'Looks great! :)', 'Beautiful 💖💖']
+comments_list = ['Love this!', 'Nice shot :)', 'Amazing~', 'Looks great! :)', 'Beautiful']
 # Number of posts to go through per hashtag
 number_of_posts = 100
 
@@ -32,8 +32,8 @@ chance_to_comment = 2
 
 # Time to wait in between processing instagram posts in seconds
 # Enter lower and upper limit in randint()
-wait_between_posts = randint(30, 60)
+wait_between_posts = randint(7, 16)
 
 # Time to wait in between liking a post and commenting on it in seconds
 # Enter lower and upper limit in randint()
-wait_to_comment = randint(20, 60)
+wait_to_comment = randint(10, 20)
