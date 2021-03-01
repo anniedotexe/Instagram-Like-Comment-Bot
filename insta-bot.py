@@ -104,7 +104,7 @@ def automate_instagram(browser):
             try:
                 # Like
                 browser.implicitly_wait(30)
-                browser.find_element_by_xpath("/html/body/div[4]/div[2]/div/article/div[3]/section[1]/span[1]/button/div/span/*[@aria-label='Like']").click()
+                browser.find_element_by_xpath("/html/body/div[5]/div[2]/div/article/div[3]/section[1]/span[1]/button/div/span/*[@aria-label='Like']").click()
                 logger.info("Liked")
                 likes += 1
 
