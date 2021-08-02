@@ -11,10 +11,11 @@ An Instagram bot written in Python using Selenium on Google Chrome. It will go t
 ### Table of Contents
 
 - [Getting Started](#getting-started)
-    - [Prerequisites](#prerequisites)
+  - [Prerequisites](#prerequisites)
 - [Instructions](#instructions)
-    - [File Structure](#file-structure)
+  - [File Structure](#file-structure)
 - [Demo](#demo)
+- [Contributing](#contributing)
 - [Creator / Maintainer](#creator-maintainer)
 - [Additional Information](#additional-information)
 
@@ -28,17 +29,17 @@ Please be aware of [Instagram's daily limits](https://socialpros.co/instagram-da
 
 - [Python 3](https://www.python.org/downloads/)
 - [Pip](https://pypi.org/project/pip/) - a python package manager
-    - Download [this file](https://bootstrap.pypa.io/get-pip.py), open a command prompt and navigate to the folder containing the `get-pip.py` installer, and run `python get-pip.py` to install
-    - Run `pip --version` to check if it has installed correctly
+  - Download [this file](https://bootstrap.pypa.io/get-pip.py), open a command prompt and navigate to the folder containing the `get-pip.py` installer, and run `python get-pip.py` to install
+  - Run `pip --version` to check if it has installed correctly
 - [ChromeDriver](https://chromedriver.chromium.org/downloads) - a WebDriver for Chrome
-    - See [Additional Information](#additional-information) for more details on installing
+  - See [Additional Information](#additional-information) for more details on installing
 - [Selenium](https://pypi.org/project/selenium/) - a python package used to automate web browser interaction
-    `pip install -U selenium`
+  `pip install -U selenium`
 
 ## Instructions
 
 1. Download [ChromeDriver](https://chromedriver.chromium.org/downloads) and extract the file.
-    - Check the version of your Google Chrome and download the matching ChromeDriver version
+   - Check the version of your Google Chrome and download the matching ChromeDriver version
 
 ![Check Chrome Version](https://media.giphy.com/media/UWP6UbIKLFcEH1bd1B/giphy.gif)
 
@@ -48,17 +49,17 @@ Please be aware of [Instagram's daily limits](https://socialpros.co/instagram-da
 chromedriver_path = "C:/local/path/to/chromedriver.exe"
 ```
 
-3. Adjustments you can make in `config.py` to tweak the bot to your liking. *(Please be aware of [Instagram's daily limits](https://socialpros.co/instagram-daily-limits#Instagram%E2%80%99s_Daily_Limits_in_2020) for likes and comments to avoid getting banned.)*
-    - **hashtag_list** - List of hashtags to go through
-    - **comments_list** - List of comments to be randonmly chosen from
-    - **number_of_posts** - Number of posts to go through per hashtag
-    - **chance_to_comment** - Chance of commenting on photo
-    - **wait_between_posts** - Time to wait in between instagram posts in seconds
-    - **wait_to_comment** - Time to wait in between liking a post and commenting on it in seconds
+3. Adjustments you can make in `config.py` to tweak the bot to your liking. _(Please be aware of [Instagram's daily limits](https://socialpros.co/instagram-daily-limits#Instagram%E2%80%99s_Daily_Limits_in_2020) for likes and comments to avoid getting banned.)_
 
+   - **hashtag_list** - List of hashtags to go through
+   - **comments_list** - List of comments to be randonmly chosen from
+   - **number_of_posts** - Number of posts to go through per hashtag
+   - **chance_to_comment** - Chance of commenting on photo
+   - **wait_between_posts** - Time to wait in between instagram posts in seconds
+   - **wait_to_comment** - Time to wait in between liking a post and commenting on it in seconds
 
 4. Create a file named `credentials.py` to hold your account login information using the format below.
-    - See [File Structure](#file-structure) for where the file should be placed.
+   - See [File Structure](#file-structure) for where the file should be placed.
 
 ```
 USERNAME = "xxx"
@@ -66,6 +67,7 @@ PASSWORD = "xxx"
 ```
 
 5. Run the script. Enjoy your Instagram bot!
+
 ```
 python insta-bot.py
 ```
@@ -84,6 +86,22 @@ Twitter-Retweet-Bot
 ## Demo
 
 ![Demo](https://media.giphy.com/media/S8fLGEDnWACMJOswye/giphy.gif)
+
+---
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change. Please make sure to update tests as appropriate.
+
+### How To Contribute
+
+1. Fork the repository to your own Github account.
+2. Clone the project to your machine.
+3. Create a branch locally with a succinct but descriptive name.
+4. Commit changes to the branch.
+5. Following any formatting and testing guidelines specific to this repo.
+6. Push changes to your fork.
+7. Open a Pull Request in my repository.
 
 ---
 
