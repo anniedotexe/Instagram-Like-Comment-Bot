@@ -21,7 +21,7 @@ Make adjustments below to tweak the bot to your liking
 # List of hashtags to go through
 hashtag_list = ['urbanandstreet', 'natureperfect']
 
-# List of comments to be randonmly chosen from
+# List of comments to be randomly chosen from
 comments_list = ['Love this!', 'Nice shot :)', 'Amazing~', 'Looks great! :)', 'Beautiful']
 # Number of posts to go through per hashtag
 number_of_posts = 100
