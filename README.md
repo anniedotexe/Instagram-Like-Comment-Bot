@@ -109,20 +109,11 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 Annie Wu ([anniedotexe](https://github.com/anniedotexe))
 
-If you have any questions about the code, feel free to contact me anywhere below.
+If you have any questions, comments, or concerns, feel free to contact me below.
 
 <p align="left">
   <a href="mailto:anniewu2303@gmail.com"> 
     <img alt="Connect via Email" src="https://img.shields.io/badge/Gmail-c14438?style=flat&logo=Gmail&logoColor=white" />
-  </a>
-  <a href="https://www.linkedin.com/in/anniewu2303/"> 
-    <img alt="Connect on LinkedIn" src="https://img.shields.io/badge/-LinkedIn-0072b1?style=flat&logo=Linkedin&logoColor=white" />
-  </a>
-  <a href="https://twitter.com/anniedotexe"> 
-    <img alt="Connect on Twitter" src="https://img.shields.io/badge/-Twitter-00acee?style=flat&logo=Twitter&logoColor=white" />
-  </a>
-  <a href="https://www.instagram.com/anniedotexe/"> 
-    <img alt="Connect on Instagram" src="https://img.shields.io/badge/-Instagram-E1306C?style=flat&logo=instagram&logoColor=white" />
   </a>
 </p>
 
