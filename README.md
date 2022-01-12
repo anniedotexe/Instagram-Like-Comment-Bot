@@ -16,7 +16,7 @@ An Instagram bot written in Python using Selenium on Google Chrome. It will go t
   - [File Structure](#file-structure)
 - [Demo](#demo)
 - [Contributing](#contributing)
-- [Creator / Maintainer](#creator-maintainer)
+- [Creator / Maintainer](#creator--maintainer)
 - [Additional Information](#additional-information)
 
 ---
