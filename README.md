@@ -1,14 +1,14 @@
-# Simple Instagram Like & Comment Bot :heart::speech_balloon:
+# Simple Instagram Like & Comment Bot :heart::speech_balloon
 
 [![Python 3.6 | 3.7 | 3.8](https://img.shields.io/badge/python-3.6%20|%203.7%20|%203.8-yellowgreen)](https://www.python.org/downloads/release/python-385/)
 ![selenium](https://img.shields.io/badge/selenium-3.141.0-green)
 [![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github)](https://github.com/Naereen/badges/)
 
-An Instagram bot written in Python using Selenium on Google Chrome. It will go through posts in hashtag(s) and like and comment on them.
+An Instagram bot written in Python using Selenium on Google Chrome. It will go through posts in hashtag(s) and like and/or comment on them.
 
 ---
 
-### Table of Contents
+## Table of Contents
 
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
@@ -41,11 +41,11 @@ Please be aware of [Instagram's daily limits](https://socialpros.co/instagram-da
 1. Download [ChromeDriver](https://chromedriver.chromium.org/downloads) and extract the file.
    - Check the version of your Google Chrome and download the matching ChromeDriver version
 
-![Check Chrome Version](https://media.giphy.com/media/UWP6UbIKLFcEH1bd1B/giphy.gif)
+  ![Check Chrome Version](https://media.giphy.com/media/UWP6UbIKLFcEH1bd1B/giphy.gif)
 
 2. In `config.py` change the **chromedriver_path** to the local path of where your ChromeDriver executable file is located
 
-```
+```python
 chromedriver_path = "C:/local/path/to/chromedriver.exe"
 ```
 
@@ -61,20 +61,20 @@ chromedriver_path = "C:/local/path/to/chromedriver.exe"
 4. Create a file named `credentials.py` to hold your account login information using the format below.
    - See [File Structure](#file-structure) for where the file should be placed.
 
-```
+```python
 USERNAME = "xxx"
 PASSWORD = "xxx"
 ```
 
 5. Run the script. Enjoy your Instagram bot!
 
-```
+```powershell
 python insta-bot.py
 ```
 
 ### File Structure
 
-```
+```markdown
 Twitter-Retweet-Bot
  |-- config.py
  |-- credentials.py
@@ -85,7 +85,7 @@ Twitter-Retweet-Bot
 
 ## Demo
 
-![Demo](https://media.giphy.com/media/S8fLGEDnWACMJOswye/giphy.gif)
+![Demo](https://media.giphy.com/media/T17t1meHK7sbHnQE0P/giphy.gif)
 
 ---
 
@@ -112,7 +112,7 @@ Annie Wu ([anniedotexe](https://github.com/anniedotexe))
 If you have any questions, comments, or concerns, feel free to contact me below.
 
 <p align="left">
-  <a href="mailto:anniewu2303@gmail.com"> 
+  <a href="mailto:anniewu2303@gmail.com">
     <img alt="Connect via Email" src="https://img.shields.io/badge/Gmail-c14438?style=flat&logo=Gmail&logoColor=white" />
   </a>
 </p>
