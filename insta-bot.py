@@ -40,41 +40,6 @@ password.send_keys(PASSWORD)
 
 sleep(2)
 
-# Click the login button
-browser.find_element_by_xpath("//*[@id='loginForm']/div/div[3]/button").click()
-
-# If login information is incorrect, program will stop running
-try:
-    if browser.find_element_by_xpath("//*[@id='slfErrorAlert']"):
-        browser.close()
-        sys.exit('Error: Login information is incorrect')
-    else:
-        pass
-except:
-    pass
-
-sleep(2)
-
-logger.info(f'Logged in to {USERNAME}')
-
-# Save your login info? Not now
-try:
-    browser.find_element_by_xpath(
-        "//*[@id='react-root']/div/div/section/main/div/div/div/div/button").click()
-except Exception:
-    pass
-
-sleep(2)
-
-# Turn on notifications? Not now
-try:
-    browser.find_element_by_xpath(
-        "/html/body/div[5]/div/div/div/div[3]/button[2]").click()
-except Exception:
-    pass
-
-sleep(2)
-
 # Keep track of how many you like and comment
 likes = 0
 comments = 0
@@ -86,11 +51,11 @@ for hashtag in hashtag_list:
     browser.get(
         f'https://www.instagram.com/explore/tags/{hashtag_list[tag_index]}/')
     logger.info(f'Exploring #{hashtag}')
-    sleep(5)
+    sleep(4)
 
     # Click first thumbnail to open
     first_thumbnail = browser.find_element_by_xpath(
-        "//*[@id='react-root']/div/div/section/main/article/div[1]/div/div/div[1]/div[1]/a/div/div[2]")
+        "/html/body/div[1]/div/div/section/main/article/div[1]/div/div/div[1]/div[1]/a/div/div[2]")
     first_thumbnail.click()
 
     # Go through x number of photos per hashtag
@@ -99,11 +64,11 @@ for hashtag in hashtag_list:
         # Check if the post is already liked
         # If not, then like, comment, and go to next post
         try:
-            browser.find_element_by_xpath("//*[@aria-label='Unlike']")
+            browser.find_element_by_xpath("//button/div/*[*[local-name()='svg']/@aria-label='Unlike']/*")
             logger.info("Already liked this post")
         except Exception:
             # Like
-            browser.find_element_by_xpath("//*[@aria-label='Like']").click()
+            browser.find_element_by_xpath("//button/div/*[*[local-name()='svg']/@aria-label='Like']/*").click()
             logger.info("Liked")
             likes += 1
 
@@ -112,8 +77,8 @@ for hashtag in hashtag_list:
             if do_i_comment == 1:
                 try:
                     # Comment
-                    browser.find_element_by_xpath("//form").click()
-                    comment = browser.find_element_by_xpath("//textarea")
+                    browser.find_element_by_xpath("//div/form").click()
+                    comment = browser.find_element_by_xpath("//form/textarea")
 
                     sleep(wait_to_comment)
 
@@ -130,7 +95,7 @@ for hashtag in hashtag_list:
 
         # Go to next post
         sleep(wait_between_posts)
-        browser.find_element_by_link_text('Next').click()
+        browser.find_element_by_xpath("//button/div/*[*[local-name()='svg']/@aria-label='Next']/*").click()
         logger.info('Getting next post')
         sleep(wait_between_posts)
 
