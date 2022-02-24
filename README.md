@@ -1,4 +1,4 @@
-# Simple Instagram Like & Comment Bot :heart::speech_balloon
+# Simple Instagram Like & Comment Bot :heart::speech_balloon:
 
 [![Python 3.6 | 3.7 | 3.8](https://img.shields.io/badge/python-3.6%20|%203.7%20|%203.8-yellowgreen)](https://www.python.org/downloads/release/python-385/)
 ![selenium](https://img.shields.io/badge/selenium-3.141.0-green)
