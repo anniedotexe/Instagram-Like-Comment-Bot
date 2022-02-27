@@ -40,6 +40,23 @@ password.send_keys(PASSWORD)
 
 sleep(2)
 
+# Click the login button
+browser.find_element_by_xpath("//*[@id='loginForm']/div/div[3]/button").click()
+
+# If login information is incorrect, program will stop running
+try:
+    if browser.find_element_by_xpath("//*[@id='slfErrorAlert']"):
+        browser.close()
+        sys.exit('Error: Login information is incorrect')
+    else:
+        pass
+except:
+    pass
+
+sleep(2)
+
+logger.info(f'Logged in to {USERNAME}')
+
 # Keep track of how many you like and comment
 likes = 0
 comments = 0
