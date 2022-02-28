@@ -34,8 +34,7 @@ Please be aware of [Instagram's daily limits](https://socialpros.co/instagram-da
 - [ChromeDriver](https://chromedriver.chromium.org/downloads) - a WebDriver for Chrome
   - See [Additional Information](#additional-information) for more details on installing
 - [Selenium](https://pypi.org/project/selenium/) - a python package used to automate web browser interaction
-  - The version used for this project is 3.141.0
-  `pip install selenium==3.141.0`
+  - The version used for this project is 3.141.0, run `pip install selenium==3.141.0` to install this version.
 
 ## Instructions
 
