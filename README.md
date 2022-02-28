@@ -1,8 +1,8 @@
 # Simple Instagram Like & Comment Bot :heart::speech_balloon:
 
-[![Python 3.6 | 3.7 | 3.8](https://img.shields.io/badge/python-3.6%20|%203.7%20|%203.8-yellowgreen)](https://www.python.org/downloads/release/python-385/)
-![selenium](https://img.shields.io/badge/selenium-3.141.0-green)
-[![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github)](https://github.com/Naereen/badges/)
+[![Python 3.6 | 3.7 | 3.8](https://img.shields.io/badge/python-3.6%20|%203.7%20|%203.8-red)](https://www.python.org/downloads/release/python-385/)
+![selenium](https://img.shields.io/badge/selenium-3.141.0-blue)
+[![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes%21/green?icon=github)](https://github.com/Naereen/badges/)
 
 An Instagram bot written in Python using Selenium on Google Chrome. It will go through posts in hashtag(s) and like and/or comment on them.
 
