@@ -1,4 +1,5 @@
 from time import sleep
+# selenium version for this project is 3.141.0
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import logging
