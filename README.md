@@ -6,6 +6,8 @@
 
 An Instagram bot written in Python using Selenium on Google Chrome. It will go through posts in hashtag(s) and like and/or comment on them.
 
+_**Created and tested on Windows, if you have Mac there may be some complications with running Selenium._
+
 ---
 
 ## Table of Contents
