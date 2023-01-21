@@ -73,8 +73,9 @@ for hashtag in hashtag_list:
 
     # Click first thumbnail to open
     first_thumbnail = browser.find_element_by_xpath(
-        "/html/body/div[1]/div/div/section/main/article/div[1]/div/div/div[1]/div[1]/a/div/div[2]")
+        "/html/body/div[2]/div/div/div/div[1]/div/div/div/div[1]/div[1]/div[2]/section/main/article/div[1]/div/div/div[1]/div[1]/a/div[1]/div[2]")
     first_thumbnail.click()
+
 
     # Go through x number of photos per hashtag
     for post in range(1, number_of_posts):
