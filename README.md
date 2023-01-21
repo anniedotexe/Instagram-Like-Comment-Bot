@@ -8,7 +8,7 @@ An Instagram bot written in Python using Selenium on Google Chrome. It will go t
 
 _**Created and tested on Windows, if you have Mac there may be some complications with running Selenium._
 
-_**Disclaimer - I rarely upkeep this, so it may occasionally not work, but I'll get to fixing it eventually._
+_**Disclaimer - I rarely upkeep this, so some Xpaths may occasionally not work if Instagram updates their code, but I'll get to fixing it eventually._
 
 ---
 
