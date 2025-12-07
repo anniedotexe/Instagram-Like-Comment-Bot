@@ -8,8 +8,6 @@ An Instagram bot written in Python using Selenium on Google Chrome. It will go t
 
 _**Created and tested on Windows, if you have Mac there may be some complications with running Selenium._
 
-_**Disclaimer - I rarely upkeep this, so some Xpaths may occasionally not work if Instagram updates their code, but I'll get to fixing it eventually._
-
 ---
 
 ## Table of Contents
@@ -109,21 +107,15 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 ---
 
-### Creator / Maintainer
+## Creator
 
 Annie Wu ([anniedotexe](https://github.com/anniedotexe))
 
-If you have any questions, comments, or concerns, feel free to contact me below.
+Copyright &copy; 2021-2026 Annie Wu. All rights reserved.
 
-<p align="left">
-  <a href="mailto:anniewu2303@gmail.com">
-    <img alt="Connect via Email" src="https://img.shields.io/badge/Gmail-c14438?style=flat&logo=Gmail&logoColor=white" />
-  </a>
-</p>
+I do not maintain this code anymore and will not respond to any questions sent to me.
 
-This project was created for educational purposes and for personal and open-source use.
-
-If you like my content or find this code useful, give it a :star: or support me by buying me a coffee :coffee::grinning:
+If you like my content or find this code useful, give it a ⭐ or support me by buying me a coffee ☕💙
 
 <a href="https://www.buymeacoffee.com/anniedotexe" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
 
