@@ -73,7 +73,7 @@ for hashtag in hashtag_list:
 
     # Click first thumbnail to open
     first_thumbnail = browser.find_element_by_xpath(
-        "/html/body/div[2]/div/div/div/div[1]/div/div/div/div[1]/div[1]/div[2]/section/main/article/div[1]/div/div/div[1]/div[1]/a/div[1]/div[2]")
+        "/html/body/div[2]/div/div/div[2]/div/div/div[1]/div[1]/div[2]/section/main/article/div/div/div/div[1]/div[1]")
     first_thumbnail.click()
 
 
@@ -83,11 +83,11 @@ for hashtag in hashtag_list:
         # Check if the post is already liked
         # If not, then like, comment, and go to next post
         try:
-            browser.find_element_by_xpath("//button/div/*[*[local-name()='svg']/@aria-label='Unlike']/*")
+            browser.find_element_by_xpath("//div[@role='button']/div/span/descendant::*[@aria-label='Unlike']")
             logger.info("Already liked this post")
         except Exception:
             # Like
-            browser.find_element_by_xpath("//button/div/*[*[local-name()='svg']/@aria-label='Like']/*").click()
+            browser.find_element_by_xpath("//div[@role='button']/div/span/descendant::*[@aria-label='Like']").click()
             logger.info("Liked")
             likes += 1
 
@@ -96,8 +96,8 @@ for hashtag in hashtag_list:
             if do_i_comment == 1:
                 try:
                     # Comment
-                    browser.find_element_by_xpath("//div/form").click()
-                    comment = browser.find_element_by_xpath("//form/textarea")
+                    browser.find_element_by_xpath("//article/descendant::section[3]/div/form").click()
+                    comment = browser.find_element_by_xpath("//article/descendant::section[3]/div/form/div/textarea")
 
                     sleep(wait_to_comment)
 
